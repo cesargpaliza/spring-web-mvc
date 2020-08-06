@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HolaAlumnosControlador {
@@ -21,10 +22,11 @@ public class HolaAlumnosControlador {
 	}
 	
 	@RequestMapping("/procesarFormularioConModelo")
-	public String otroProcesoFormulario(HttpServletRequest req, Model modelo) {
-		
-		String nombre = req.getParameter("nombre");
-		
+	//	public String otroProcesoFormulario(HttpServletRequest req, Model modelo) {
+	//		String nombre = req.getParameter("nombre");
+
+	//Se sustituyer la clase HttpServlet por la anntation RequestParam
+	public String otroProcesoFormulario(@RequestParam("nombre") String nombre, Model modelo) {
 		//agregar informacion al modelo		
 		modelo.addAttribute("nombreMayusculas", nombre.toUpperCase());
 		
