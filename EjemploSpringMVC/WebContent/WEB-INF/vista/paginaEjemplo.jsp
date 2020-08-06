@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Página en JSP</h1>
-	<a href="muestraFormulario">Formulario</a>
+	<a href="controlador/muestraFormulario">Formulario</a>
 
 </body>
 </html>

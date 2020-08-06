@@ -1,6 +1,5 @@
 package com.cesar.springmvc;
 
-import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+//Agrego a la ruta relativa para diferenciar de las rutas de otros controladores
+@RequestMapping("/controlador") 
 public class HolaAlumnosControlador {
 	
 	//Método proporciona formulario, se puede definir o no un parametro url
