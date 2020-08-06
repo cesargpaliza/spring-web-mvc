@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h2>Hola ${ param.nombre } bienvenido</h2>
+	<h2>Atributo Enviado ${ nombreMayusculas } </h2>
 </body>
 </html>

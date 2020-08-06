@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Spring MVC</title>
 </head>
 <body>
 	
-	<form action="procesarFormulario" method="get">
+	<form action="procesarFormularioConModelo" method="get">
 		
 		<input type="text" name="nombre" />
 		<br/>
