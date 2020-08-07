@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Spring MVC</title>
+<title>Confirmacion de Registro</title>
 </head>
 <body>
-	<h1>Página en JSP</h1>
-	<a href="alumno/addAlumno">Formulario de registro</a>
+	<h4>El alumno ${ alumno.apellido }, ${ alumno.nombre } se ha registrado correctamente </h4>
+	
 
 </body>
 </html>
