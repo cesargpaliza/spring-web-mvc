@@ -8,8 +8,9 @@
 </head>
 <body>
 	<h4>El alumno ${ alumno.apellido }, ${ alumno.nombre } se ha registrado correctamente </h4>
-	<br/>
-	<p> La asignatura seleccionada es: ${ alumno.optativa }
+	<p> La asignatura seleccionada es: ${ alumno.optativa } <br>
+	La povincia es ${ alumno.provincia }
+	
 	</p>
 
 </body>

@@ -16,11 +16,19 @@
         <br><br>  
         Apellido: <form:input path="apellido" />  
         <br><br>  
-        Asignatura optativa <form:select path="optativa" multiple="true">
+        Asignatura optativa <br><form:select path="optativa" multiple="true">
         	<form:option value="diseño" label="Diseño"/>
         	<form:option value="analisis" label="Analisis"/>
         	<form:option value="programacion" label="Programacion"/>
         </form:select>
+        <br><br>
+        <u>Provincia:</u><br>
+        Tucuman <form:radiobutton path="provincia" value="tucuman"/><br>
+        Salta   <form:radiobutton path="provincia" value="salta"/><br>
+        Jujuy   <form:radiobutton path="provincia" value="jujuy"/><br>
+        <br>     
+        
+        
         <input type="submit" value="Submit" />      
     </form:form>
 	

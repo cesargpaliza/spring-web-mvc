@@ -4,7 +4,14 @@ public class Alumno {
 	private String nombre;
 	private String apellido;
 	private String optativa;
+	private String provincia;
 	
+	public String getProvincia() {
+		return provincia;
+	}
+	public void setProvincia(String provincia) {
+		this.provincia = provincia;
+	}
 	public String getOptativa() {
 		return optativa;
 	}
