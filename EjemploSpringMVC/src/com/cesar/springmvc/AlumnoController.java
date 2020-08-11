@@ -1,7 +1,10 @@
 package com.cesar.springmvc;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,10 +23,14 @@ public class AlumnoController {
 	}
 	
 	@RequestMapping("/processFormAlumno")
-	public String procesarFormularioAlumno(@ModelAttribute("alumno") Alumno alumno) {
-		
-		
-		return "confirmacionRegistroAlumno";
+	public String procesarFormularioAlumno( @Valid @ModelAttribute("alumno") Alumno alumno, 
+											BindingResult resultadoValidacion ) {	
+		//System.out.println(resultadoValidacion.toString());
+		if(resultadoValidacion.hasErrors()) {
+			return "addAlumnoForm";
+		}else {
+			return "confirmacionRegistroAlumno";
+		}
 	}
 
 }

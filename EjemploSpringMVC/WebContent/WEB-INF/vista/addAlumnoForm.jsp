@@ -12,9 +12,11 @@
 	<!-- modelAttribute esta binded con el atributo de Model de Spring-->
 	<form:form action="processFormAlumno" modelAttribute="alumno">  	
 		<!-- path hace referencia a los getter y setters del objeto de Model de Spring -->
-        Nombre: <form:input path="nombre" />         
+        Nombre: <form:input path="nombre" /><br>
+        <form:errors path="nombre" style="color:red"/>       
         <br><br>  
-        Apellido: <form:input path="apellido" />  
+        Apellido: <form:input path="apellido" /><br>
+        <form:errors path="apellido" style="color:red"/>       
         <br><br>  
         Asignatura optativa <br><form:select path="optativa" multiple="true">
         	<form:option value="diseño" label="Diseño"/>

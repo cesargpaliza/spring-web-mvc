@@ -1,8 +1,15 @@
 package com.cesar.springmvc;
 
+import javax.validation.constraints.*;
+
 public class Alumno {
+	
+	@NotNull
+	@Size(min=4, message="El campo nombre es requerido")
 	private String nombre;
-	private String apellido;
+	@NotNull
+	@Size(min=4, message="El campo apellido es requerido")
+	private String apellido;	
 	private String optativa;
 	private String provincia;
 	
